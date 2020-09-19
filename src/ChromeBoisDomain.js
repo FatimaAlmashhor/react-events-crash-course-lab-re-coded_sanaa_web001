@@ -29,12 +29,16 @@ export default class ChromeBoisDomain extends Component {
   /* if the key pressed was 'a', then it should call `resize` with '+'
   /* if the key pressed was 's', then it should call `resize` with '-' 
    */
+   handlePressing =() =>{
+     
+   }
   
   render() {
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
         onClick= {this.handleClicking}
+          onKeyDown={this.handlePressing}
         width='900'
         height='600'
         tabIndex="0">
