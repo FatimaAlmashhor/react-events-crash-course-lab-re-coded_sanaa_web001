@@ -19,6 +19,10 @@ export default class ChromeBoisDomain extends Component {
    * listener that should fire it!
    */
    
+   handleClicking = () =>{
+     
+   }
+   
   /* TODO: Add an event listener to the `<canvas>` element to capture when a key
   /* is pressed. When a key is pressed, an event handler should invoke the
   /* provided `resize` function with a single argument of either '+' or '-'
@@ -30,6 +34,7 @@ export default class ChromeBoisDomain extends Component {
     return (
       <canvas 
         onMouseMove={this.handleMouseMove}
+        onClick= {this.handleClicking}
         width='900'
         height='600'
         tabIndex="0">
